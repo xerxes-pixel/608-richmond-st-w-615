@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparative Market Analysis — 608 Richmond St W #615</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+:root{
+  --navy:#08172F;
+  --red:#DC1C2E;
+  --blue:#004D9A;
+  --grey:#A7A9AB;
+  --ink:#10182B;
+  --paper:#FFFFFF;
+  --mist:#EEF1F4;
+  --line:#D8DDE3;
+  --wrap:560px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Crimson Text', Georgia, serif;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:19.5px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+p{margin:0 0 1em}
+em{font-style:italic}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--navy);color:#fff;padding:36px 0 32px;position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;
+  background:linear-gradient(90deg,var(--red) 0 50%,var(--blue) 50% 100%);}
+.hero .topline{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;gap:12px}
+.hero .topline img{height:38px;width:auto}
+.hero .mark{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);font-weight:600;text-align:right}
+.hero .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--red);font-weight:700;margin:0 0 8px}
+.hero h1{font-size:28px;font-weight:700;margin:0 0 6px;line-height:1.14}
+.hero .addr-sub{font-size:16px;color:#dfe6ef;font-style:italic;margin:0 0 22px}
+.hero-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;box-shadow:0 12px 26px rgba(0,0,0,.35);display:block;margin-bottom:22px}
+.spec-row{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.spec-cell{padding:14px 10px;border-bottom:1px solid rgba(255,255,255,.18)}
+.spec-cell:nth-child(odd){border-right:1px solid rgba(255,255,255,.18)}
+.spec-cell .n{font-size:24px;font-weight:700;color:#fff;line-height:1}
+.spec-cell .l{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin-top:5px}
+.hero-facts{list-style:none;margin:18px 0 0;padding:0}
+.hero-facts li{position:relative;padding:0 0 0 20px;margin:0 0 9px;font-size:16px;color:#eaf0f7;line-height:1.42}
+.hero-facts li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;background:var(--red);transform:rotate(45deg)}
+.hero-facts b{color:#fff}
+
+/* ---------- SECTION SHELL ---------- */
+.section-head{background:var(--navy);color:#fff;padding:24px 0}
+.section-head .num{font-size:38px;font-weight:700;color:var(--red);line-height:.8;letter-spacing:-.02em;margin-bottom:6px}
+.section-head .kicker{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--grey);font-weight:600;margin:0 0 5px}
+.section-head h2{font-size:23px;font-weight:700;margin:0;line-height:1.12}
+.section-body{padding:34px 0 40px}
+.band-paper{background:var(--paper)}
+.band-mist{background:var(--mist)}
+
+/* ---------- STAT GRID ---------- */
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.stat-cell{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px 10px;text-align:center}
+.stat-cell .v{font-size:21px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat-cell .k{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#5a6272;margin-top:6px;line-height:1.28}
+
+.temp-indicator{display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 18px}
+.temp-badge{align-self:flex-start;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--blue);padding:8px 16px;border-radius:30px}
+.temp-indicator p{margin:0;font-size:15.5px;line-height:1.55;color:#2a3142}
+
+/* ---------- COMP CARDS ---------- */
+.comp-grid{display:flex;flex-direction:column;gap:22px}
+.comp-card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.comp-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.comp-body{padding:18px 18px 20px}
+.comp-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;gap:10px}
+.comp-head .unit{font-size:19px;font-weight:700;color:var(--navy)}
+.comp-head .price{font-size:19px;font-weight:700;color:var(--ink)}
+.comp-sub{font-size:13.5px;color:#5a6272;margin-bottom:13px;letter-spacing:.01em}
+ul.diffs{list-style:none;margin:0 0 15px;padding:0}
+ul.diffs li{position:relative;padding:0 0 0 18px;margin:0 0 7px;font-size:15px;line-height:1.42;color:#2a3142}
+ul.diffs li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--blue);transform:rotate(45deg)}
+.adj-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:13px;margin-top:2px}
+.adj-row .lbl{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#5a6272}
+.adj-row .amt{font-size:15px;font-weight:700;color:var(--navy)}
+.adj-final{display:flex;justify-content:space-between;align-items:baseline;margin-top:9px}
+.adj-final .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#5a6272;font-weight:600}
+.adj-final .val{font-size:23px;font-weight:700;color:var(--red)}
+
+/* Active comp card */
+.active-card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.active-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.active-body{padding:20px 18px 22px}
+.active-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px;gap:8px;flex-wrap:wrap}
+.active-head .unit{font-size:19px;font-weight:700;color:var(--navy)}
+.active-head .price{font-size:19px;font-weight:700;color:var(--ink)}
+.active-sub{font-size:13.5px;color:#5a6272;margin-bottom:14px}
+.dom-pill{display:block;width:fit-content;background:var(--mist);border:1px solid var(--line);color:var(--navy);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:20px;margin-top:6px}
+
+/* ---------- SECTION 4 : RANGE ---------- */
+.range-hero{background:var(--navy);color:#fff;border-radius:8px;padding:28px 22px 26px;text-align:center;margin-bottom:26px}
+.range-hero .kicker{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);font-weight:600;margin:0 0 12px}
+.range-hero .num{font-size:32px;font-weight:700;margin:0;letter-spacing:-.01em;line-height:1.2}
+.range-hero .num .to{color:var(--grey);font-weight:400;font-style:italic;margin:0 8px;font-size:.7em}
+.range-hero .sub{font-size:14.5px;color:#dfe6ef;margin:12px 0 0}
+
+.scale-wrap{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px 20px;margin-bottom:26px}
+.scale-wrap h3{font-size:18px;font-weight:700;color:var(--navy);margin:0 0 16px}
+.v-track{position:relative;width:8px;background:var(--mist);border-radius:6px;margin:0 auto;height:220px}
+.v-band{position:absolute;left:0;right:0;background:linear-gradient(180deg,rgba(220,28,46,.32),rgba(220,28,46,.18));border-radius:6px}
+.v-scale-list{margin-top:20px;display:flex;flex-direction:column;gap:12px}
+.v-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--line);border-radius:6px}
+.v-dot{flex:none;width:14px;height:14px;border-radius:50%;background:var(--navy);border:3px solid #fff;box-shadow:0 0 0 2px var(--navy)}
+.v-dot.subj{background:var(--red);box-shadow:0 0 0 2px var(--red)}
+.v-item .amt{font-size:16px;font-weight:700;color:var(--navy)}
+.v-item .tag{font-size:12px;letter-spacing:.03em;text-transform:uppercase;color:#5a6272;margin-top:1px}
+
+.rationale{display:flex;flex-direction:column;gap:16px}
+.rationale p{font-size:16px;line-height:1.6;color:#2a3142;margin:0}
+.rationale p b{color:var(--navy)}
+
+/* ---------- DISCLOSURE ---------- */
+.disclosure{border:2px solid var(--red);background:#fff6f6;border-radius:8px;padding:18px 18px;margin:32px 0 0;display:flex;gap:12px;align-items:flex-start}
+.disclosure .mark2{flex:none;font-size:19px;color:var(--red);font-weight:700;line-height:1}
+.disclosure p{margin:0;font-size:14.5px;line-height:1.5;color:var(--navy);font-style:italic;font-weight:600}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--navy);color:#fff;padding:32px 0 36px;text-align:center}
+footer img{width:64px;height:auto;margin-bottom:12px}
+footer .fmark{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--grey);font-weight:600;margin:0 0 7px}
+footer .ftag{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase}
+footer .ftag b{color:var(--red)}
+footer .fcontact{margin-top:14px;color:var(--grey);font-size:13px;line-height:1.65}
+
+h3{font-size:19px;font-weight:700;color:var(--navy);margin:0 0 14px}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero"><div class="wrap">
+  <div class="topline">
+    <img src="images/img-042.png" alt="Team Rajpal logo">
+    <span class="mark">RE/MAX Key2 Real Estate,<br>Brokerage</span>
+  </div>
+  <p class="kicker">Comparative Market Analysis</p>
+  <h1>608 Richmond St W, Unit 615</h1>
+  <p class="addr-sub">The Harlowe · Waterfront Communities C1, Toronto (Toronto C01)</p>
+
+  <img class="hero-photo" src="images/img-043.jpg" alt="608 Richmond St W">
+
+  <div class="spec-row">
+    <div class="spec-cell"><div class="n">1</div><div class="l">Bedroom</div></div>
+    <div class="spec-cell"><div class="n">1</div><div class="l">Bathroom</div></div>
+    <div class="spec-cell"><div class="n">614</div><div class="l">Sq Ft</div></div>
+    <div class="spec-cell"><div class="n">2018</div><div class="l">Building Built</div></div>
+  </div>
+  <ul class="hero-facts">
+    <li><b>Condo apartment</b> — concrete loft-style construction</li>
+    <li>Brick &amp; concrete exterior</li>
+    <li>Ensuite laundry, central air, forced-air gas heat</li>
+    <li>Owned locker included</li>
+    <li>Owned parking included</li>
+  </ul>
+</div></header>
+
+<!-- ============ SECTION 1 : MARKET ============ -->
+<div class="section-head"><div class="wrap">
+  <div class="num">01</div>
+  <p class="kicker">State of the Market</p><h2>Toronto C01 — 1-Bed Condo Apartments</h2>
+</div></div>
+<section class="section-body band-mist"><div class="wrap">
+  <div class="stat-grid">
+    <div class="stat-cell"><div class="v">$524,433</div><div class="k">Avg Sale Price</div></div>
+    <div class="stat-cell"><div class="v">$510,000</div><div class="k">Median Sale Price</div></div>
+    <div class="stat-cell"><div class="v">585</div><div class="k">Active Listings</div></div>
+    <div class="stat-cell"><div class="v">5.27</div><div class="k">Months of Inventory</div></div>
+    <div class="stat-cell"><div class="v">97.5%</div><div class="k">Avg Sale-to-List Ratio</div></div>
+    <div class="stat-cell"><div class="v">35.1</div><div class="k">Avg Days on Market</div></div>
+  </div>
+  <div class="temp-indicator">
+    <span class="temp-badge">Cool · Buyer-Leaning</span>
+    <p>August 2026 closed at 115 sales against 292 new listings — a sales-to-new-listings ratio of 39.4%, well under the 40% line that typically favours sellers. With 5.27 months of inventory on the shelf and the average sale price down from a 2023 peak of roughly $698,682 to $524,433 today, this segment has been cooling steadily and currently leans toward buyers.</p>
+  </div>
+</div></section>
+
+<!-- ============ SECTION 2 : WHAT SOLD ============ -->
+<div class="section-head"><div class="wrap">
+  <div class="num">02</div>
+  <p class="kicker">The Evidence</p><h2>What Sold</h2>
+</div></div>
+<section class="section-body band-paper"><div class="wrap">
+  <div class="comp-grid">
+
+    <div class="comp-card">
+      <img src="images/img-044.jpg" alt="608 Richmond St W #404">
+      <div class="comp-body">
+        <div class="comp-head"><span class="unit">Unit #404</span><span class="price">$425,000</span></div>
+        <div class="comp-sub">500 sq ft · Loft</div>
+        <ul class="diffs">
+          <li>Smaller unit — 500 sq ft vs. the subject's 614 sq ft</li>
+          <li>No parking included</li>
+          <li>Heat pump / electric heat, not forced-air gas</li>
+          <li>Base builder finish, no notable upgrades</li>
+        </ul>
+        <div class="adj-row"><span class="lbl">Adjustment</span><span class="amt">+ $90,000</span></div>
+        <div class="adj-final"><span class="lbl">Adjusted Value</span><span class="val">$515,000</span></div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <img src="images/img-045.jpg" alt="608 Richmond St W #613">
+      <div class="comp-body">
+        <div class="comp-head"><span class="unit">Unit #613</span><span class="price">$490,000</span></div>
+        <div class="comp-sub">500 sq ft · Apartment</div>
+        <ul class="diffs">
+          <li>Smaller unit — 500 sq ft vs. the subject's 614 sq ft</li>
+          <li>Standard apartment finish, not loft-style</li>
+          <li>No parking included</li>
+          <li>Extensively renovated 2024–2025 — new bath, new washer/dryer, designer wallpaper, quartz counters</li>
+          <li>10-ft ceilings exclusive to that floor</li>
+          <li>Downtown view</li>
+        </ul>
+        <div class="adj-row"><span class="lbl">Adjustment</span><span class="amt">+ $20,000</span></div>
+        <div class="adj-final"><span class="lbl">Adjusted Value</span><span class="val">$510,000</span></div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <img src="images/img-046.jpg" alt="608 Richmond St W #619">
+      <div class="comp-body">
+        <div class="comp-head"><span class="unit">Unit #619</span><span class="price">$555,000</span></div>
+        <div class="comp-sub">604 sq ft · Loft</div>
+        <ul class="diffs">
+          <li>Nearly identical size — 604 sq ft vs. the subject's 614 sq ft</li>
+          <li>Has a fireplace; the subject does not</li>
+          <li>Heavily upgraded — roughly $50K in fixtures, custom island, built-in Murphy bed</li>
+          <li>Open balcony</li>
+          <li>Unobstructed city / downtown views</li>
+          <li>Vacant and freshly painted at time of sale</li>
+        </ul>
+        <div class="adj-row"><span class="lbl">Adjustment</span><span class="amt">− $40,000</span></div>
+        <div class="adj-final"><span class="lbl">Adjusted Value</span><span class="val">$515,000</span></div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <img src="images/img-047.jpg" alt="608 Richmond St W #LPH9">
+      <div class="comp-body">
+        <div class="comp-head"><span class="unit">Unit LPH9</span><span class="price">$760,000</span></div>
+        <div class="comp-sub">741 sq ft · Loft, 1+Den</div>
+        <ul class="diffs">
+          <li>Larger, plus a den — 741 sq ft 1+den vs. the subject's 614 sq ft straight one-bedroom</li>
+          <li>Penthouse-level unit</li>
+          <li>Has a balcony</li>
+          <li>More upgraded finishes — motorized blinds, marble tile, waterfall island</li>
+        </ul>
+        <div class="adj-row"><span class="lbl">Adjustment</span><span class="amt">− $245,000</span></div>
+        <div class="adj-final"><span class="lbl">Adjusted Value</span><span class="val">$515,000</span></div>
+      </div>
+    </div>
+
+  </div>
+</div></section>
+
+<!-- ============ SECTION 3 : WHAT'S AVAILABLE ============ -->
+<div class="section-head"><div class="wrap">
+  <div class="num">03</div>
+  <p class="kicker">The Competition</p><h2>What's Available</h2>
+</div></div>
+<section class="section-body band-mist"><div class="wrap">
+  <div class="active-card">
+    <img src="images/img-048.jpg" alt="608 Richmond St W #1203">
+    <div class="active-body">
+      <div class="active-head">
+        <span class="unit">Unit #1203</span>
+        <span class="price">$809,000</span>
+      </div>
+      <span class="dom-pill">1 Day on Market</span>
+      <div class="active-sub" style="margin-top:12px">789 sq ft · Loft, 1+Den</div>
+      <ul class="diffs">
+        <li>Larger, plus a den — 789 sq ft 1+den vs. the subject's 614 sq ft one-bedroom</li>
+        <li>Large balcony — 120+ sq ft</li>
+        <li>Brand new to market; pricing not yet tested against the market</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ SECTION 4 : RECOMMENDED RANGE ============ -->
+<div class="section-head"><div class="wrap">
+  <div class="num">04</div>
+  <p class="kicker">Where This Lands</p><h2>Recommended Value Range</h2>
+</div></div>
+<section class="section-body band-paper"><div class="wrap">
+
+  <div class="range-hero">
+    <p class="kicker">Recommended List Range</p>
+    <p class="num">$505,000<span class="to">–</span>$520,000</p>
+    <p class="sub">This is our professional read on where 608 Richmond St W #615 belongs today.</p>
+  </div>
+
+  <div class="scale-wrap">
+    <h3>Where the Comps Land</h3>
+    <div class="v-scale-list">
+      <div class="v-item"><span class="v-dot subj"></span><div><div class="amt">$505,000</div><div class="tag">Range low</div></div></div>
+      <div class="v-item"><span class="v-dot"></span><div><div class="amt">$510,000</div><div class="tag">#613 adjusted</div></div></div>
+      <div class="v-item"><span class="v-dot"></span><div><div class="amt">$515,000</div><div class="tag">#404 · #619 · LPH9 adjusted</div></div></div>
+      <div class="v-item"><span class="v-dot subj"></span><div><div class="amt">$520,000</div><div class="tag">Range high</div></div></div>
+    </div>
+  </div>
+
+  <div class="rationale">
+    <p>Once we adjust each sold comp for how it actually differs from 608 Richmond St W #615, the four results converge tightly. Unit #613, at 500 sq ft with a smaller footprint and no parking but offset by a full 2024–2025 renovation and a downtown view, adjusts to <b>$510,000</b>. Units #404, #619, and LPH9 — despite selling anywhere from $425,000 to $760,000 in raw terms, and ranging from a smaller no-upgrade builder unit to a penthouse 1+den — all land at the same <b>$515,000</b> once sized, styled, and finished against the subject. That kind of convergence from such different starting points is exactly the signal we want to see.</p>
+    <p>The broader market backs up a measured approach here. Toronto C01's 1-bed condo segment has been cooling steadily — average sale price has fallen from roughly $698,682 in 2023 to $524,433 today, inventory sits at 5.27 months, and August's sales-to-new-listings ratio of 39.4% tells us buyers currently have the leverage. Unit #1203, a brand-new listing at $809,000, illustrates the risk on the other side: a 1+den nearly 30% larger than the subject, priced well above where the comps support, with only one day on market to prove it. We are not the market, and neither is any one listing — the buyers are, and the adjusted sold data is what tells us what they've actually been willing to pay.</p>
+    <p>Given all of this, we recommend positioning 608 Richmond St W #615 in the <b>$505,000–$520,000</b> range. It sits right where the strongest, most comparable evidence clusters, gives us room to generate competition rather than invite a standoff, and reflects the market we're actually selling into today — not the one from a few years ago. We'll walk through all of this together and land on the number that makes the most sense for you once we've had a chance to see the home in person.</p>
+  </div>
+
+</div></section>
+
+<!-- ============ DISCLOSURE ============ -->
+<section class="section-body band-mist" style="padding-top:0"><div class="wrap">
+  <div class="disclosure">
+    <span class="mark2">&#9888;</span>
+    <p>This CMA is based on an online in depth search. We will adjust our recommendation on price, if need be, once we have done a physical walk through of your home.</p>
+  </div>
+</div></section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <img src="images/img-042.png" alt="Team Rajpal logo">
+  <p class="fmark">Team Rajpal &nbsp;·&nbsp; RE/MAX Key2 Real Estate, Brokerage</p>
+  <p class="ftag">Xerxes Bharucha, <b>Broker</b></p>
+  <p class="fcontact">Pickering (Seaton), Ontario &nbsp;|&nbsp; Sales · Leasing · Property Management<br>
+  Search "Team Rajpal" &nbsp;·&nbsp; teamrajpal.com</p>
+</footer>
+
+</body></html>

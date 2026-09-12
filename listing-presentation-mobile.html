@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>608 Richmond St W. #615, Toronto — Listing Presentation (Mobile)</title>
+<style>
+:root{
+  --navy:#08172F; --navy2:#10182B; --red:#DC1C2E; --blue:#004D9A;
+  --graybg:#EEF1F4; --muted:#A7A9AB; --lightnavy:#9FB3D1; --border:#D8DDE3;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:#F4F5F7;color:var(--navy2);
+  font-family:Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}
+.page{max-width:640px;margin:0 auto;background:#fff;}
+.topbar{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;
+  font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;
+  padding:10px 12px;font-weight:700;}
+.section{padding:36px 22px;border-bottom:1px solid #EEF0F3;}
+.section:last-child{border-bottom:none;}
+.cover{background:var(--navy);color:#fff;text-align:center;padding:56px 24px 40px;}
+.cover img.logo{width:120px;height:120px;border-radius:14px;background:#fff;padding:8px;margin-bottom:28px;}
+.cover h1{font-family:Cambria, Georgia, 'Times New Roman', serif;font-size:38px;
+  font-weight:700;margin:0 0 14px;line-height:1.2;}
+.cover .sub{font-family:Cambria, Georgia, serif;font-style:italic;color:var(--lightnavy);
+  font-size:19px;margin-bottom:22px;}
+.cover .addr{font-size:19px;font-weight:700;margin-bottom:22px;}
+.cover hr{border:none;border-top:1px solid #294B7A;width:140px;margin:0 auto 22px;}
+.cover .brand{font-weight:700;font-size:15px;margin-bottom:6px;}
+.cover .brand-sub{font-size:13px;color:#A7A9AB;margin-bottom:26px;}
+.cover .coverphoto{border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.35);}
+.cover .coverphoto img{width:100%;display:block;object-fit:cover;height:150px;}
+
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--navy);margin-bottom:8px;}
+.kicker .n{color:var(--red);}
+.toc-title, .content-title{font-family:Cambria, Georgia, 'Times New Roman', serif;
+  color:var(--navy);font-weight:700;margin:0 0 14px;line-height:1.25;}
+.toc-title{font-size:30px;}
+.content-title{font-size:27px;}
+.lead-italic{font-size:16px;font-style:italic;color:#5B6472;line-height:1.6;margin-bottom:22px;}
+
+.toc-list{list-style:none;margin:0;padding:0;}
+.toc-list li{border-bottom:1px solid var(--border);}
+.toc-list a{display:flex;align-items:center;gap:16px;padding:16px 4px;text-decoration:none;color:inherit;}
+.toc-list a:active{background:rgba(220,28,46,0.06);}
+.toc-list .num{font-family:Cambria, Georgia, serif;font-weight:700;color:var(--red);font-size:22px;width:34px;flex-shrink:0;}
+.toc-list .ttl{font-size:17px;color:var(--navy2);}
+
+.section-divider{background:var(--navy);color:#fff;padding:56px 24px;position:relative;overflow:hidden;}
+.section-divider .bignum{font-family:Cambria, Georgia, serif;font-size:64px;font-weight:700;
+  color:var(--red);margin:0 0 14px;}
+.section-divider .kicker2{font-size:14px;letter-spacing:3px;color:#A7A9AB;font-weight:700;margin-bottom:10px;}
+.section-divider h2{font-family:Cambria, Georgia, serif;font-size:32px;font-weight:700;margin:0 0 16px;line-height:1.2;}
+.section-divider p{font-size:16px;font-style:italic;color:var(--lightnavy);line-height:1.6;margin:0;}
+
+.stat-card{background:var(--graybg);border-radius:10px;padding:22px;margin-bottom:14px;text-align:center;
+  page-break-inside:avoid;}
+.stat-card.dark{background:var(--navy);color:#fff;}
+.stat-card .num{font-family:Cambria, Georgia, serif;color:var(--red);font-size:30px;font-weight:700;}
+.stat-card .label{font-size:15px;margin-top:6px;color:var(--navy2);}
+.stat-card.dark .label{color:#fff;}
+.stat-card .icon-circle{width:44px;height:44px;border-radius:50%;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
+
+.profile-card{background:var(--graybg);border-radius:10px;padding:26px 22px;margin-bottom:16px;text-align:center;
+  page-break-inside:avoid;}
+.profile-card img{width:84px;height:84px;border-radius:50%;margin-bottom:14px;object-fit:cover;}
+.profile-card h3{font-family:Cambria, Georgia, serif;font-size:21px;color:var(--navy);margin:0 0 4px;}
+.profile-card .role{color:var(--red);font-style:italic;font-size:14.5px;margin-bottom:12px;}
+.profile-card p{font-size:15px;line-height:1.6;color:var(--navy2);text-align:left;margin:0;}
+
+.card-stack{background:var(--graybg);border-radius:10px;padding:22px;margin-bottom:14px;page-break-inside:avoid;}
+.card-stack.dark{background:var(--navy);color:#fff;}
+.card-stack .icon-circle{width:44px;height:44px;border-radius:50%;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.card-stack.on-dark .icon-circle{background:#004D9A;}
+.card-stack h4{font-family:Cambria, Georgia, serif;font-size:19px;margin:0 0 8px;color:var(--navy);font-weight:700;}
+.card-stack.dark h4{color:#fff;}
+.card-stack p{font-size:15px;line-height:1.6;margin:0;color:var(--navy2);}
+.card-stack.dark p{color:#fff;}
+.card-stack.center{text-align:center;}
+.card-stack .icon-circle.mx-auto{margin-left:auto;margin-right:auto;}
+
+.quote{background:var(--navy);color:#fff;border-radius:10px;padding:26px 22px;margin:6px 0 16px;
+  font-style:italic;font-size:19px;line-height:1.5;font-weight:700;page-break-inside:avoid;}
+.quote.light{background:var(--graybg);color:var(--navy2);font-weight:400;font-size:16px;}
+.quote.strip{background:var(--red);color:#fff;font-style:normal;font-weight:700;font-size:22px;}
+.quote .lead-ic{width:44px;height:44px;border-radius:50%;background:#DC1C2E;
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+.quote .lead-ic img{width:24px;height:24px;}
+
+.checklist{list-style:none;margin:0 0 16px;padding:0;}
+.checklist li{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start;page-break-inside:avoid;}
+.checklist .ic{width:34px;height:34px;border-radius:50%;background:#004D9A;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.checklist .ic img{width:22px;height:22px;}
+.checklist .txt h4{margin:0 0 4px;font-size:16.5px;color:var(--navy);font-family:Calibri, Arial, sans-serif;}
+.checklist .txt p{margin:0;font-size:15px;color:var(--navy2);line-height:1.55;}
+
+.faq-card{background:var(--graybg);border-radius:10px;padding:20px;margin-bottom:14px;page-break-inside:avoid;}
+.faq-card .q{display:flex;gap:12px;align-items:flex-start;font-weight:700;color:var(--navy);
+  font-size:16.5px;margin-bottom:10px;font-family:Cambria, Georgia, serif;}
+.faq-card .q .ic{width:38px;height:38px;border-radius:50%;background:var(--navy);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;}
+.faq-card .q .ic img{width:22px;height:22px;}
+.faq-card p{margin:0;font-size:15px;color:var(--navy2);line-height:1.6;}
+
+.note-italic{font-size:13.5px;color:#8A93A3;font-style:italic;margin:10px 0 20px;}
+.section-note{background:var(--graybg);border-radius:10px;padding:20px;font-style:italic;
+  font-size:15.5px;color:var(--navy2);line-height:1.6;margin-top:8px;}
+.two-col-list{list-style:none;margin:0;padding:0;}
+.two-col-list li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;}
+.two-col-list .ic{width:28px;height:28px;border-radius:50%;background:#004D9A;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;}
+.two-col-list .ic img{width:18px;height:18px;}
+.two-col-list span{font-size:15.5px;color:var(--navy2);line-height:1.5;}
+
+.snapshot-photo{border-radius:10px;overflow:hidden;margin-bottom:22px;border:1px solid var(--border);}
+.snapshot-photo img{width:100%;display:block;object-fit:cover;height:220px;}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:16px;}
+.highlights{margin:0;padding:0;list-style:none;}
+.highlights li{display:flex;gap:10px;margin-bottom:10px;font-size:15px;color:var(--navy2);}
+.highlights li .dash{color:var(--red);font-weight:700;}
+
+.closer{background:var(--navy);color:#fff;text-align:center;padding:56px 24px;}
+.closer img{width:100px;height:100px;border-radius:12px;background:#fff;padding:6px;margin-bottom:24px;}
+.closer .sub{font-family:Cambria, Georgia, serif;font-style:italic;font-size:24px;margin-bottom:14px;}
+.closer .cta{color:var(--lightnavy);font-size:16px;margin-bottom:22px;}
+.closer hr{border:none;border-top:1px solid #294B7A;width:140px;margin:0 auto 22px;}
+.closer .brand{font-weight:700;font-size:16px;margin-bottom:6px;}
+.closer .brand-sub{font-size:13.5px;color:#A7A9AB;margin-bottom:10px;}
+.closer .search{color:var(--red);font-weight:700;font-size:14.5px;}
+
+h4, h3 {page-break-after:avoid;}
+@media print{
+  body{background:#fff;}
+  .stat-card,.profile-card,.card-stack,.quote{page-break-inside:avoid;}
+  h2,h3,h4{page-break-after:avoid;}
+}
+</style>
+</head>
+<body>
+<div class="topbar">608 Richmond St W. #615, Toronto &middot; Team Rajpal</div>
+<div class="page">
+
+<div class="cover" id="m-slide-1">
+<img src="images/img-001.png" class="logo" style="width:120px;height:120px;">
+<h1>Selling Your Home</h1>
+<div class="sub">You&rsquo;ll Love Coming Home&hellip;</div>
+<div class="addr">608 Richmond St W. #615, Toronto</div>
+<hr>
+<div class="brand">Team Rajpal &middot; RE/MAX Key2 Real Estate, Brokerage</div>
+<div class="brand-sub">Pickering (Seaton), Ontario | Sales &middot; Leasing &middot; Property Management</div>
+<div class="coverphoto"><img src="images/img-002.jpg" style="object-position:center 45%;"></div>
+</div>
+
+
+<div class="section" id="m-slide-2">
+<div class="kicker">What&rsquo;s Inside</div>
+<div class="toc-title">Table of Contents</div>
+<ul class="toc-list"><li><a href="#m-slide-3"><span class="num">01</span><span class="ttl">Who We Are</span></a></li><li><a href="#m-slide-7"><span class="num">02</span><span class="ttl">Why RE/MAX &amp; The Power of Team Rajpal</span></a></li><li><a href="#m-slide-9"><span class="num">03</span><span class="ttl">What to Expect Working With Us</span></a></li><li><a href="#m-slide-11"><span class="num">04</span><span class="ttl">Total Exposure Marketing</span></a></li><li><a href="#m-slide-15"><span class="num">05</span><span class="ttl">Pricing Strategy</span></a></li><li><a href="#m-slide-18"><span class="num">06</span><span class="ttl">Our Commission &amp; What It Covers</span></a></li><li><a href="#m-slide-20"><span class="num">07</span><span class="ttl">Communication &amp; Reporting</span></a></li><li><a href="#m-slide-22"><span class="num">08</span><span class="ttl">Negotiation</span></a></li><li><a href="#m-slide-24"><span class="num">09</span><span class="ttl">The Seller&rsquo;s Role</span></a></li><li><a href="#m-slide-26"><span class="num">10</span><span class="ttl">Why Team Rajpal</span></a></li><li><a href="#m-slide-28"><span class="num">11</span><span class="ttl">FAQs &amp; Objections, Handled with Confidence</span></a></li></ul>
+</div>
+
+
+<div class="section" id="m-slide-snapshot">
+<div class="kicker"><span class="n"></span>Property Snapshot</div>
+<div class="content-title">608 Richmond St W. #615</div>
+<div class="lead-italic">Toronto (Waterfront Communities C1)<br>Richmond St W &amp; Bathurst St</div>
+<div class="snapshot-photo"><img src="images/img-002.jpg"></div>
+<div class="stat-grid">
+  <div class="stat-card"><div class="num">1</div><div class="label">Bedroom</div></div>
+  <div class="stat-card"><div class="num">1</div><div class="label">Bathroom</div></div>
+  <div class="stat-card"><div class="num">600&ndash;699</div><div class="label">Sq Ft</div></div>
+  <div class="stat-card"><div class="num">Owned</div><div class="label">Parking</div></div>
+</div>
+<div class="stat-card" style="margin-bottom:16px;"><div class="num">Owned</div><div class="label">Locker</div></div>
+<div class="note-italic">Condominium unit &mdash; no lot size applies.</div>
+<div class="content-title" style="font-size:20px;margin-top:8px;">Property Highlights</div>
+<ul class="highlights">
+<li><span class="dash">&mdash;</span><span>Concrete loft-style construction</span></li>
+<li><span class="dash">&mdash;</span><span>Brick &amp; concrete exterior</span></li>
+<li><span class="dash">&mdash;</span><span>Ensuite laundry</span></li>
+<li><span class="dash">&mdash;</span><span>Central air conditioning</span></li>
+<li><span class="dash">&mdash;</span><span>Forced-air gas heat</span></li>
+<li><span class="dash">&mdash;</span><span>Owned parking &amp; locker included</span></li>
+</ul>
+</div>
+
+
+<div class="section-divider" id="m-slide-3">
+<div class="bignum">01</div>
+<div class="kicker2">INTRODUCTION</div>
+<h2>Who We Are</h2>
+
+</div>
+
+
+<div class="section" id="m-slide-4">
+<div class="kicker"><span class="n">01&nbsp;&nbsp;</span> WHO WE ARE</div>
+<div class="content-title">A Family Business, Three Generations Deep</div>
+<div class="stat-card dark">
+  <div class="num">22</div><div class="label">family members active<br>in real estate today</div>
+</div>
+<div class="stat-card dark">
+  <div class="num" style="color:#004D9A;">10</div><div class="label">of them right here<br>in the GTA</div>
+</div>
+<div class="note-italic">A tradition that began in England in the 1950s &mdash; this isn&rsquo;t something we stumbled into. It&rsquo;s something we were built for.</div>
+<div class="profile-card">
+<img src="images/img-003.png" class="" style="width:84px;height:84px;">
+<h3>Rajiv Rajpal</h3><div class="role">Founder</div>
+<p>Decades in the business &mdash; long enough to have seen every kind of market, deal, and client situation. His philosophy: let&rsquo;s all grow together, clients included.</p>
+</div>
+<div class="profile-card">
+<img src="images/img-004.png" class="" style="width:84px;height:84px;">
+<h3>Geeta Rajpal</h3><div class="role">Founder, ASA</div>
+<p>Joined Rajiv in 2006. Disciplined, empathetic, and relentlessly focused on the client experience &mdash; and a tough negotiator through and through.</p>
+</div>
+</div>
+
+
+<div class="section" id="m-slide-5">
+<div class="kicker"><span class="n">01&nbsp;&nbsp;</span> WHO WE ARE</div>
+<div class="content-title">Meet the Rest of the Team</div>
+<div class="profile-card"><img src="images/img-005.png" class="" style="width:84px;height:84px;"><h3>Xerxes</h3><div class="role">Broker</div><p>Longest-tenured member of the team. Deep knowledge across buyers, sellers, and investors &mdash; delivered with warmth and wit.</p></div><div class="profile-card"><img src="images/img-006.png" class="" style="width:84px;height:84px;"><h3>Radhika</h3><div class="role">Agent</div><p>30 years leading teams in global fashion before real estate. A global perspective and a sharp eye for detail.</p></div><div class="profile-card"><img src="images/img-007.png" class="" style="width:84px;height:84px;"><h3>Shakeel</h3><div class="role">Agent</div><p>Found real estate through a passion for helping people. Guided by listening, patience, and community investment.</p></div><div class="profile-card"><img src="images/img-008.png" class="" style="width:84px;height:84px;"><h3>Kandyce</h3><div class="role">Client &amp; Listing Coordinator</div><p>Keeps every transaction moving &mdash; the calm, quick-witted presence behind a seamless process.</p></div>
+</div>
+
+
+<div class="section" id="m-slide-6">
+<div class="kicker"><span class="n">01&nbsp;&nbsp;</span> WHO WE ARE</div>
+<div class="content-title">Numbers That Outperform the Market</div>
+<div class="stat-card" style="text-align:left;">
+    <div class="icon-circle"><img src="images/img-009.png" class="" style="width:26px;height:26px;"></div>
+    <div class="num" style="text-align:left;">$1B+</div>
+    <div class="label" style="text-align:left;">of real estate sold*</div>
+    </div><div class="stat-card" style="text-align:left;">
+    <div class="icon-circle"><img src="images/img-010.png" class="" style="width:26px;height:26px;"></div>
+    <div class="num" style="text-align:left;">Top 1%</div>
+    <div class="label" style="text-align:left;">of REALTORS&reg; in Canada by production*</div>
+    </div><div class="stat-card" style="text-align:left;">
+    <div class="icon-circle"><img src="images/img-011.png" class="" style="width:26px;height:26px;"></div>
+    <div class="num" style="text-align:left;">20 vs 54</div>
+    <div class="label" style="text-align:left;">days on market &mdash; ours vs. the area average*</div>
+    </div><div class="stat-card" style="text-align:left;">
+    <div class="icon-circle"><img src="images/img-012.png" class="" style="width:26px;height:26px;"></div>
+    <div class="num" style="text-align:left;">99% vs 96%</div>
+    <div class="label" style="text-align:left;">sale-to-list ratio &mdash; ours vs. market average*</div>
+    </div><div class="stat-card" style="text-align:left;">
+    <div class="icon-circle"><img src="images/img-013.png" class="" style="width:26px;height:26px;"></div>
+    <div class="num" style="text-align:left;">18,000+</div>
+    <div class="label" style="text-align:left;">buyer, seller &amp; investor database</div>
+    </div><div class="stat-card" style="text-align:left;">
+    <div class="icon-circle"><img src="images/img-014.png" class="" style="width:26px;height:26px;"></div>
+    <div class="num" style="text-align:left;">5,000+</div>
+    <div class="label" style="text-align:left;">monthly views from our LED listing displays</div>
+    </div>
+<div class="note-italic">*Based on sold and pending sales since 2003, using independent third-party research and TRREB data.</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-7">
+<div class="bignum">02</div>
+<div class="kicker2">BRAND & TRUST</div>
+<h2>Why RE/MAX &amp; The Power of Team Rajpal</h2>
+<p>The name buyers recognize everywhere, backed by the team your neighbours already know.</p>
+</div>
+
+
+<div class="section" id="m-slide-8">
+<div class="kicker"><span class="n">02&nbsp;&nbsp;</span> WHY RE/MAX &amp; THE POWER OF TEAM RAJPAL</div>
+<div class="content-title">The Brand You Know. The Team Your Neighbours Trust.</div>
+<div class="card-stack dark">
+<div class="icon-circle" style="background:#DC1C2E;"><img src="images/img-010.png" class="" style="width:28px;height:28px;"></div>
+<h4 style="color:#fff;">Why RE/MAX</h4>
+<p>When people see the RE/MAX balloon, they think real estate. Full stop. That recognition is built on decades of results, a global network, and a standard of professionalism clients trust.</p>
+<p style="margin-top:14px;font-style:italic;font-weight:700;">Your home is marketed under a name that carries instant credibility &mdash; locally, nationally, and internationally.</p>
+</div>
+<div class="card-stack">
+<div class="icon-circle" style="background:#fff;border:1px solid var(--border);"><img src="images/img-001.png" class="" style="width:45px;height:37px;"></div>
+<h4>The Power of Team Rajpal</h4>
+<p>RE/MAX is the brand people recognize. Team Rajpal is the name people in this community are coming to know &mdash; through door knocking, community events, signage, bus shelters, and a deliberate digital presence.</p>
+<p style="margin-top:14px;font-style:italic;font-weight:700;color:#DC1C2E;">&ldquo;That kind of recognition isn&rsquo;t bought. It&rsquo;s earned.&rdquo;</p>
+</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-9">
+<div class="bignum">03</div>
+<div class="kicker2">THE PROCESS</div>
+<h2>What to Expect<br>Working With Us</h2>
+<p>From the first conversation to the day we close, you&rsquo;ll always know where you stand and what comes next.</p>
+</div>
+
+
+<div class="section" id="m-slide-10">
+<div class="kicker"><span class="n">03&nbsp;&nbsp;</span> WHAT TO EXPECT WORKING WITH US</div>
+<div class="content-title">Expectations vs. Reality</div>
+<ul class="checklist"><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><h4>What we&rsquo;ll tell you</h4><p>What the market data supports &mdash; not what you want to hear, not what makes us look good.</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><h4>What we won&rsquo;t do</h4><p>Validate a number that feels good but doesn&rsquo;t reflect reality.</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><h4>Our role</h4><p>Interpret what the market is saying and help you act on it clearly, without hesitation.</p></div></li></ul>
+<div class="quote"><div class="lead-ic"><img src="images/img-016.png" class="" style="width:24px;height:24px;"></div>&ldquo;We are not the market. You are not the market. The buyers are.&rdquo;</div>
+<div class="section-note">The agents who tell you what you want to hear are doing you no favours. We&rsquo;d rather have a straight conversation now than a difficult one later.</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-11">
+<div class="bignum">04</div>
+<div class="kicker2">MARKETING</div>
+<h2>Total Exposure Marketing</h2>
+<p>Most agents list a home and wait. We build a campaign &mdash; and put it in front of the right buyers everywhere they look.</p>
+</div>
+
+
+<div class="section" id="m-slide-12">
+<div class="kicker"><span class="n">04&nbsp;&nbsp;</span> TOTAL EXPOSURE MARKETING</div>
+<div class="content-title">Every Channel. Every Buyer. Everywhere.</div>
+<div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-017.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Photography, Drone &amp; Video</h4><p>Interior, exterior &amp; drone &mdash; every listing.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-018.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Video Tours &amp; YouTube</h4><p>Evergreen assets that work past launch day.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-019.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Social Media Campaigns</h4><p>Instagram, Facebook, TikTok, LinkedIn &amp; more.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-020.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Targeted Digital Ads</h4><p>Reaching buyers by geography &amp; search stage.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-021.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Door-to-Door Outreach</h4><p>Real conversations before and after launch.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-022.png" class="" style="width:22px;height:22px;"></div>
+    <h4>AI-Powered Buyer Follow-Up</h4><p>No lead goes cold.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-023.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Investor Network</h4><p>Direct to active buyers before public launch.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-024.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Real Estate Portal Syndication</h4><p>Realtor.ca and beyond, fully featured.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-025.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Feature Sheets &amp; Flyers</h4><p>Professional print at every showing.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-026.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Bus Shelter &amp; Bench Ads</h4><p>15 shelters + 3 benches on Brock, Taunton &amp; Whites Rd.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-027.png" class="" style="width:22px;height:22px;"></div>
+    <h4>On-Site Community Board</h4><p>Answers buyer questions instantly.</p></div><div class="card-stack center">
+    <div class="icon-circle mx-auto"><img src="images/img-028.png" class="" style="width:22px;height:22px;"></div>
+    <h4>Strategic Open Houses</h4><p>Timed and promoted for maximum turnout.</p></div>
+</div>
+
+
+<div class="section" id="m-slide-14">
+<div class="kicker"><span class="n">04&nbsp;&nbsp;</span> TOTAL EXPOSURE MARKETING</div>
+<div class="content-title">What This Means for You</div>
+<ul class="checklist"><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">More serious buyers, sooner</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">Faster offers with stronger terms</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">Fewer conditions and delays</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">Better negotiation leverage</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">An exceptional experience, start to finish</p></div></li></ul>
+<div class="quote">This is what total exposure actually nets you.<br><span style="color:#DC1C2E;">A higher price. In less time.</span></div>
+<div class="section-note" style="font-weight:700;font-style:normal;">That&rsquo;s the goal. More money in your pocket.</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-15">
+<div class="bignum">05</div>
+<div class="kicker2">PRICING</div>
+<h2>Pricing Strategy</h2>
+<p>Not the staging. Not the photography. The price is the single most important decision we&rsquo;ll make together.</p>
+</div>
+
+
+<div class="section" id="m-slide-16">
+<div class="kicker"><span class="n">05&nbsp;&nbsp;</span> PRICING STRATEGY</div>
+<div class="content-title">We Are Not the Market. The Buyers Are.</div>
+<div class="quote">Neither of us sets the price. The market does. Our job is to read it accurately, present the data, and recommend a number that attracts the right buyers &mdash; not one that just feels good.</div>
+<div class="card-stack">
+<div class="icon-circle" style="background:#004D9A;"><img src="images/img-029.png" class="" style="width:26px;height:26px;"></div>
+<h4>What We Bring to the Table</h4>
+<p>A detailed Comparative Market Analysis &mdash; recent sales, active competition, days on market, and price-per-square-foot trends in your specific area. We look at your home objectively, the way a buyer will.</p>
+</div>
+<div class="card-stack">
+<div class="icon-circle" style="background:#DC1C2E;"><img src="images/img-030.png" class="" style="width:26px;height:26px;"></div>
+<h4>A Word on Upgrades</h4>
+<p>&ldquo;Did you make these upgrades for yourself &mdash; or for the next buyer?&rdquo; Upgrades made before listing are about speed of sale, not always dollar-for-dollar value. We&rsquo;ll help you understand what moves the needle.</p>
+</div>
+</div>
+
+
+<div class="section" id="m-slide-17">
+<div class="kicker"><span class="n">05&nbsp;&nbsp;</span> PRICING STRATEGY</div>
+<div class="content-title">The 10-10-0 Rule</div>
+<div class="lead-italic">Pricing isn&rsquo;t a one-time decision &mdash; it&rsquo;s an ongoing conversation once your home is live.</div>
+<div class="stat-card">
+  <div class="num">10</div><div class="label" style="font-weight:700;letter-spacing:1px;">DAYS, ZERO SHOWINGS</div>
+  <p style="font-size:14.5px;margin-top:10px;">The market is telling us something. We have a direct conversation about what it&rsquo;s saying &mdash; and what we do next.</p>
+</div>
+<div class="stat-card">
+  <div class="num">10</div><div class="label" style="font-weight:700;letter-spacing:1px;">SHOWINGS, ZERO OFFERS</div>
+  <p style="font-size:14.5px;margin-top:10px;">The buyers have spoken. We listen, and we adjust.</p>
+</div>
+<div class="stat-card dark">
+  <div class="num">0</div><div class="label" style="font-weight:700;letter-spacing:1px;">MONEY LEFT ON THE TABLE</div>
+  <p style="font-size:14.5px;margin-top:10px;">The goal: real interest, real showings, real offers &mdash; so we negotiate from the strongest possible position.</p>
+</div>
+<div class="section-note" style="font-weight:700;font-style:italic;">When the right buyer comes, we are not looking for the quickest sale. We are looking for the highest price &mdash; we never leave money on the table.</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-18">
+<div class="bignum">06</div>
+<div class="kicker2">COMMISSION</div>
+<h2>Our Commission &amp;<br>What It Covers</h2>
+<p>What the fee actually pays for &mdash; and why it isn&rsquo;t take-home pay.</p>
+</div>
+
+
+<div class="section" id="m-slide-19">
+<div class="kicker"><span class="n">06&nbsp;&nbsp;</span> OUR COMMISSION &amp; WHAT IT COVERS</div>
+<div class="content-title">Commission Is Revenue, Not Take-Home Pay</div>
+<ul class="two-col-list"><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Brokerage splits</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Professional liability insurance</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Marketing &mdash; photography, video, drone, print</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Signage and physical presence</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Online advertising &mdash; social, YouTube, search</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Administrative &amp; coordination support</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Office overhead</span></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:18px;height:18px;"></div><span>Fixed and variable costs &mdash; before the sold sign goes up</span></li></ul>
+<div class="quote"><div class="lead-ic"><img src="images/img-016.png" class="" style="width:24px;height:24px;"></div>&ldquo;It&rsquo;s not about paying a lower commission. It&rsquo;s about netting more money in your pocket. Those are two very different conversations.&rdquo;</div>
+<div class="section-note">The more desperate and less experienced an agent is, the more likely they are to negotiate their own commission before they&rsquo;ve ever negotiated on your behalf. That&rsquo;s not generosity &mdash; that&rsquo;s a signal.</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-20">
+<div class="bignum">07</div>
+<div class="kicker2">STAYING INFORMED</div>
+<h2>Communication &amp;<br>Reporting</h2>
+<p>You&rsquo;ll never wonder what&rsquo;s happening with your listing.</p>
+</div>
+
+
+<div class="section" id="m-slide-21">
+<div class="kicker"><span class="n">07&nbsp;&nbsp;</span> COMMUNICATION &amp; REPORTING</div>
+<div class="content-title">You&rsquo;ll Never Wonder What&rsquo;s Happening</div>
+<div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-029.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Market Activity</h4><p>What&rsquo;s happening in your price range and area &mdash; what&rsquo;s sold, what&rsquo;s new, and what it means for your listing.</p></div><div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-032.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Showing Feedback</h4><p>What buyers and their agents are saying after they walk through your home.</p></div><div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-033.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Your Online Presence</h4><p>Views and clicks on your Realtor.ca listing, plus combined metrics across our platforms.</p></div>
+<div class="card-stack dark">
+<div class="icon-circle" style="background:#DC1C2E;"><img src="images/img-034.png" class="" style="width:26px;height:26px;"></div>
+<h4 style="color:#DC1C2E;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;">Our Minimum Communication Guarantee</h4>
+<p>We promise to communicate our efforts every week to you &mdash; a formal update, without exception, followed by a minimum of one phone call to walk through it together. When things are active, you&rsquo;ll hear from us more.</p>
+<p style="margin-top:14px;font-style:italic;color:var(--lightnavy);">Showings coordinated from our Seaton office &mdash; in minutes, not hours.</p>
+</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-22">
+<div class="bignum">08</div>
+<div class="kicker2">AT THE TABLE</div>
+<h2>Negotiation</h2>
+<p>When an offer comes in, this is where we earn our keep.</p>
+</div>
+
+
+<div class="section" id="m-slide-23">
+<div class="kicker"><span class="n">08&nbsp;&nbsp;</span> NEGOTIATION</div>
+<div class="content-title">Assertive at the Table. Protective of You.</div>
+<div class="card-stack">
+<div class="icon-circle" style="background:#004D9A;"><img src="images/img-035.png" class="" style="width:26px;height:26px;"></div>
+<h4>We never let a deal die at our end of the table.</h4>
+<p>If there is a path to a workable outcome, we find it.</p>
+</div>
+<div class="card-stack">
+<div class="icon-circle" style="background:#DC1C2E;"><img src="images/img-036.png" class="" style="width:26px;height:26px;"></div>
+<h4>We never leave money on the table.</h4>
+<p>Even if it means going back and forth over a few thousand dollars &mdash; that&rsquo;s your money, and we treat it that way.</p>
+</div>
+<div class="card-stack dark">
+<div class="icon-circle" style="background:#DC1C2E;"><img src="images/img-037.png" class="" style="width:28px;height:28px;"></div>
+<p><strong>&ldquo;What Stays in This Room&rdquo;</strong> &mdash; your timeline, motivation, and circumstances stay with us. It never reaches the buyer or their agent. The moment personal information crosses the table, it becomes leverage against you. That&rsquo;s a line we don&rsquo;t cross.</p>
+</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-24">
+<div class="bignum">09</div>
+<div class="kicker2">YOUR PART</div>
+<h2>The Seller&rsquo;s Role</h2>
+<p>A few simple things that make a real difference in how quickly &mdash; and how well &mdash; your home sells.</p>
+</div>
+
+
+<div class="section" id="m-slide-25">
+<div class="kicker"><span class="n">09&nbsp;&nbsp;</span> THE SELLER&rsquo;S ROLE</div>
+<div class="content-title">The Home Has to Show Well. Every Time.</div>
+<div class="lead-italic">Buyers don&rsquo;t schedule their emotions. The home needs to be ready &mdash; not just on good days, but consistently.</div>
+<div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-038.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Clean and decluttered at all times</h4><p>Buyers are trying to picture their life in your home. Make it easy for them.</p></div><div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-039.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Vacant during showings</h4><p>Sellers present make buyers rush and skip honest conversations with their agent.</p></div><div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-015.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Staged and maintained</h4><p>Staging recommendations directly impact how quickly &mdash; and for how much &mdash; your home sells.</p></div><div class="card-stack center"><div class="icon-circle mx-auto"><img src="images/img-040.png" class="" style="width:26px;height:26px;"></div>
+    <h4>Strong odours addressed</h4><p>Pet smells, smoke, cooking &mdash; buyers notice immediately. Fresh air and neutral scents go a long way.</p></div>
+<div class="note-italic">Top tip: pop the oven on low and throw in a little flour &mdash; it creates a subtle, warm, freshly-baked smell that makes a home feel inviting the moment buyers walk in.</div>
+</div>
+
+
+<div class="section-divider" id="m-slide-26">
+<div class="kicker2">10&nbsp;&nbsp;THE CLOSE</div>
+<h2>Why Team Rajpal</h2>
+<div class="stat-card dark" style="margin-top:20px;">
+<div class="num" style="font-size:40px;">50+</div>
+<div class="label" style="letter-spacing:1px;font-weight:700;">YEARS OF COMBINED<br>REAL ESTATE EXPERIENCE</div>
+</div>
+</div>
+
+
+<div class="section" id="m-slide-27">
+<div class="kicker"><span class="n">10&nbsp;&nbsp;</span> WHY TEAM RAJPAL</div>
+<div class="content-title">Your Goal Is Our Goal.</div>
+<ul class="checklist"><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">We protect your information.</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">We fight for every dollar.</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">We communicate consistently.</p></div></li><li><div class="ic"><img src="images/img-015.png" class="" style="width:22px;height:22px;"></div><div class="txt"><p style="font-size:16px;">If selling isn&rsquo;t right for you now, we&rsquo;ll be the first to say so.</p></div></li></ul>
+<div class="quote">&ldquo;That&rsquo;s not a sales pitch. That&rsquo;s just how we operate.&rdquo;</div>
+<div class="quote strip">Let&rsquo;s get to work.<div style="font-weight:400;font-size:15px;margin-top:10px;">We look forward to walking through the pricing strategy for your home specifically &mdash; and putting everything in place to go to market with confidence.</div></div>
+</div>
+
+
+<div class="section-divider" id="m-slide-28">
+<div class="bignum">11</div>
+<div class="kicker2">STRAIGHT ANSWERS</div>
+<h2>FAQs &amp; Objections,<br>Handled with Confidence</h2>
+<p>The questions we hear most &mdash; answered honestly, every time.</p>
+</div>
+
+
+<div class="section" id="m-slide-29">
+<div class="kicker"><span class="n">11&nbsp;&nbsp;</span> FAQS &amp; OBJECTIONS, HANDLED WITH CONFIDENCE</div>
+<div class="content-title">Straight Answers, Part One</div>
+<div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Why is your commission higher than the agent down the street?&rdquo;</span></div><p>This was never about paying less &mdash; it&rsquo;s about netting more. An agent who leads with a discount is telling you the only value they can offer is a lower number.</p></div><div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;I think my home is worth more than that.&rdquo;</span></div><p>You might be right &mdash; so let&rsquo;s check. We are not the market. The buyers are, and they vote with their offers.</p></div><div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Why isn&rsquo;t my home selling?&rdquo;</span></div><p>Let&rsquo;s let the market tell us. Ten days, zero showings &mdash; it&rsquo;s the price. Ten showings, zero offers &mdash; it&rsquo;s still the price.</p></div><div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Should I make upgrades before I list?&rdquo;</span></div><p>Sometimes &mdash; but for the right reason. Pre-listing work is about speed of sale, not added dollar value.</p></div>
+</div>
+
+
+<div class="section" id="m-slide-30">
+<div class="kicker"><span class="n">11&nbsp;&nbsp;</span> FAQS &amp; OBJECTIONS, HANDLED WITH CONFIDENCE</div>
+<div class="content-title">Straight Answers, Part Two</div>
+<div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Will you tell buyers why I&rsquo;m selling?&rdquo;</span></div><p>Never. Your timeline, motivation, and situation stay with us &mdash; no matter what&rsquo;s happening behind the scenes.</p></div><div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Aren&rsquo;t all agents basically the same?&rdquo;</span></div><p>It&rsquo;s the most common belief in real estate &mdash; and exactly why sellers shop on price. We&rsquo;re happy to be measured against any agent you&rsquo;re considering.</p></div><div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Another agent said they could list it higher.&rdquo;</span></div><p>Anyone can promise a higher number to win the listing. The market doesn&rsquo;t honour promises &mdash; it honours buyers.</p></div><div class="faq-card"><div class="q"><div class="ic"><img src="images/img-041.png" class="" style="width:22px;height:22px;"></div><span>&ldquo;Is now even a good time to sell?&rdquo;</span></div><p>A motivated seller in any market beats a hesitant one. The question isn&rsquo;t when. It&rsquo;s whether you&rsquo;re ready.</p></div>
+</div>
+
+
+<div class="closer" id="m-slide-31">
+<img src="images/img-001.png" class="" style="width:100px;height:100px;">
+<div class="sub">You&rsquo;ll Love Coming Home&hellip;</div>
+<div class="cta">The next step is simple. Let&rsquo;s get started.</div>
+<hr>
+<div class="brand">Team Rajpal</div>
+<div class="brand-sub">RE/MAX Key2 Real Estate, Brokerage</div>
+<div class="brand-sub">Pickering (Seaton), Ontario | Sales &middot; Leasing &middot; Property Management</div>
+<div class="search">Search &ldquo;Team Rajpal&rdquo; &middot; teamrajpal.com</div>
+</div>
+
+</div>
+</body>
+</html>
